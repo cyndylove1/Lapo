@@ -13,12 +13,12 @@ export default function Login() {
 
   return (
     <>
-      <div className=" flex background">
+      <div className=" flex lg:justify-start justify-center background">
         <div className="">
           <div className="pt-[3rem] px-[30px]">
             <Logo />
           </div>
-          <div className="pl-[50px]">
+          <div className="lg:pl-[50px] px-4">
             <h2 className="pt-[3rem] satoshi-500 text-(--color) text-[28px] leading-[30px]">
               Hi, Welcome Back!
             </h2>
@@ -31,14 +31,14 @@ export default function Login() {
                 <Input
                   placeholder="Enter your username"
                   type="text"
-                  className="w-[500px]"
+                  className="lg:w-[500px] w-full"
                 />
               </div>
               <div className="">
                 <Label text="Password" hideIcon={true} />
                 <InputPassword
                   hideIcon={false}
-                  className="w-[500px]"
+                  className="lg:w-[500px] w-full"
                   placeholder="Enter your Password"
                   showVisibility={passwordVisible}
                   togglePasswordVisibility={() =>
@@ -49,7 +49,7 @@ export default function Login() {
               <h2 className="text-[14px] satoshi-400 pt-[6px] leading-[20px] text-(--color)">
                 Forgot Password
               </h2>
-              <div className="flex items-center gap-[12px] pt-[1rem]">
+              <div className="flex lg:justify-center items-center justify-start gap-[12px] pt-[1rem]">
                 <Checkbox height="20px" width="20px" />
                 <h3 className="text-[14px] satoshi-400 leading-[20px] text-[#161616]">
                   Remember me
@@ -57,7 +57,7 @@ export default function Login() {
               </div>
               <Button
                 text="Login"
-                className="bg-(--main) w-[500px] h-[44px] rounded-[8px] mt-[1rem]"
+                className="bg-(--main) lg:w-[500px] w-full h-[44px] rounded-[8px] mt-[1rem]"
               />
             </form>
           </div>
@@ -65,7 +65,7 @@ export default function Login() {
             <Footer />
           </div>
         </div>
-        <div className="py-[1rem] pl-[50px] pr-[1rem]">
+        <div className="py-[1rem] pl-[50px] pr-[1rem] hidden lg:flex">
           <Cover />
         </div>
       </div>

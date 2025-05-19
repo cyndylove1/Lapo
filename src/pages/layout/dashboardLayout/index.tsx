@@ -36,7 +36,9 @@ export default function DashboardLayout() {
           <div className="fixed top-0 right-0 left-0 lg:left-[240px] z-20">
             <Header onMenuClick={toggleSidebar} />
           </div>
-          <main className="h-[calc(100vh-82px)] mt-[4rem]"><Outlet/></main>
+          <main className="h-[calc(100vh-82px)] mt-[4rem]">
+            <Outlet />
+          </main>
         </div>
       </div>
     </>

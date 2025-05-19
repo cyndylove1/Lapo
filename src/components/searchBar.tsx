@@ -9,7 +9,7 @@ export default function SearchBar ({
   return (
     <>
       <div className="relative">
-        <span className="left-3 top-1/2 text-neutral-500 absolute -translate-y-1/2">
+        <span className="left-3  top-1/2 text-neutral-500 absolute -translate-y-1/2">
           <svg
             width="17"
             height="16"

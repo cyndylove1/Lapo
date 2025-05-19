@@ -9,7 +9,7 @@ export default function Dashboard() {
   return (
     <>
       <div className="mx-4">
-        <div className="flex items-center justify-between flex-col md:flex-row">
+        <div className="flex items-center justify-between ">
           <div>
             <h2 className="satoshi-700 text-[18px] leading-[24px] text-(--color) pt-2 ">
               Hi Nazeer, what would you like to do today?

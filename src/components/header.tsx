@@ -47,11 +47,14 @@ export default function Header({ onMenuClick }: HeaderProps) {
             </div>
           ))}
         </ul>
-        <div className="flex justify-between items-center gap-[20px]">
-          <SearchBar
-            placeholder="Search"
-            className="rounded-[98px] h-[32px] hidden lg:flex w-[214px] border-[1px] border-(--border)"
-          />
+        <div className="flex justify-between items-center  gap-[20px]">
+          <div className="hidden md:flex">
+            <SearchBar
+              placeholder="Search"
+              className="rounded-[98px] h-[32px]  w-[214px] border-[1px] border-(--border)"
+            />
+          </div>
+
           <span>
             <svg
               width="40"
