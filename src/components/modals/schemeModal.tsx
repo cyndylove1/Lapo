@@ -19,7 +19,7 @@ export default function SchemeModal({ isSchemeOpen, onClose }: ModalProps) {
       ></div>
 
       {/* Modal Content */}
-      <div className="relative z-10 md:w-[496px] w-full h-[394px] rounded-xl bg-white shadow-md">
+      <div className="relative z-10 md:w-[496px]  h-[394px] rounded-xl bg-white shadow-md">
         <div className="flex items-center justify-between px-4 border-b-[1px] border-(--border)">
           <div className="flex items-center gap-3">
             <div>

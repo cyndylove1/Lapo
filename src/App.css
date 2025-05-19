@@ -6,6 +6,9 @@ body{
   padding: 0;
   box-sizing: border-box;
   font-family: 'Satoshi', sans-serif;
+  background-color: #ffffff; 
+  color: #000000; 
+
 }
 
 .background{

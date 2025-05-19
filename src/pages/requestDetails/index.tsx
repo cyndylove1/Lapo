@@ -90,7 +90,7 @@ export default function RequestDetails() {
           Card Request Details
         </h2>
         <form action="">
-          <div className="grid grid-cols-2 gap-[20px]">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-[20px]">
             <div>
               <div>
                 <Label text="Branch Name" hideIcon={true} />
@@ -137,10 +137,10 @@ export default function RequestDetails() {
           <h2 className="satoshi-700 text-[14px] leading-[20px] pb-[10px] text-(--color) mt-[20px]">
             Action
           </h2>
-          <div className="mt-[2px] flex items-center gap-[12px]">
+          <div className="mt-[2px] flex items-center gap-[12px] flex-col md:flex-row ">
             {/* Download Button */}
             <button
-              className={`w-full h-[36px] flex items-center justify-center gap-[1px] rounded-[4px] satoshi-500 text-[12px] leading-[18px] text-white ${
+              className={`w-full h-[36px] flex items-center justify-center  gap-[1px] rounded-[4px] satoshi-500 text-[12px] leading-[18px] text-white ${
                 isModalOpen ? "bg-black" : "bg-[#aeb3bb]"
               }`}
               onClick={() => setIsModalOpen(true)}

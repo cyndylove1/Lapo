@@ -11,16 +11,15 @@ interface ModalIssueProps {
     if (!isIssueOpen) return null;
   
     return (
-      <div className="fixed inset-0 z-60 flex items-center justify-center bg-black/70 px-4">
-        <div className="relative z-10 w-full md:w-[496px] h-[214px] overflow-y-auto rounded-xl bg-white">
+        <div className="fixed inset-0 z-6 flex items-center justify-center overflow-y-auto">
           {/* Overlay */}
           <div
             className="absolute inset-0 bg-[#000] opacity-70"
             onClick={onClose}
           ></div>
-  
+
           {/* Modal Content */}
-          <div className="relative z-10 w-[496px]  h-[214px] rounded-xl bg-white shadow-md">
+          <div className="relative z-10 md:w-[496px] w-full h-[214px] rounded-xl bg-white shadow-md">
             <div className="flex items-center justify-between px-4 border-b-[1px] border-(--border)">
               <div className="flex items-center gap-3">
                 <div>
@@ -66,7 +65,10 @@ interface ModalIssueProps {
                         filterUnits="userSpaceOnUse"
                         color-interpolation-filters="sRGB"
                       >
-                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
                         <feColorMatrix
                           in="SourceAlpha"
                           type="matrix"
@@ -103,7 +105,7 @@ interface ModalIssueProps {
                   </h6>
                 </div>
               </div>
-  
+
               <button onClick={onClose}>
                 {/* Close Icon */}
                 <svg
@@ -125,9 +127,9 @@ interface ModalIssueProps {
             </div>
             {/* button */}
             <div className="border-b-[1px] border-(--border)">
-              <div className="flex items-center gap-[20px] mx-6 py-[2rem]">
+              <div className="flex items-center gap-[20px] md:mx-6 py-[2rem]">
                 <button
-                  className="flex items-center justify-center border-[1px] border-(--border) rounded-[4px] gap-[8px] h-[40px] w-[129px]"
+                  className="flex items-center justify-center border-[1px] border-(--border) rounded-[4px] gap-[8px] h-[40px] w-full md:w-[129px]"
                   onClick={onIssuePinClick}
                 >
                   <span>
@@ -159,7 +161,7 @@ interface ModalIssueProps {
                   </h2>
                 </button>
                 <button
-                  className="flex items-center justify-center border-[1px] border-(--border) rounded-[4px] gap-[8px] h-[40px] w-[132px]"
+                  className="flex items-center justify-center border-[1px] border-(--border) rounded-[4px] gap-[8px] h-[40px] w-full md:w-[132px]"
                   onClick={onIssueSmsClick}
                 >
                   <span>
@@ -184,7 +186,7 @@ interface ModalIssueProps {
                   </h2>
                 </button>
                 <button
-                  className="flex items-center justify-center border-[1px] border-(--border) rounded-[4px] gap-[8px] h-[40px] w-[139px]"
+                  className="flex items-center justify-center border-[1px] border-(--border) rounded-[4px] gap-[8px] h-[40px] w-full md:w-[139px]"
                   onClick={onIssueEmailClick}
                 >
                   <span>
@@ -212,7 +214,6 @@ interface ModalIssueProps {
             </div>
           </div>
         </div>
-      </div>
     );
   }
   

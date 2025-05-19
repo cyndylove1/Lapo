@@ -9,8 +9,7 @@ export default function PinModal({ isOpen, onClose }: PinModalProps) {
     const generatedPin = "1 2 3 4";
 
   return (
-    <div className="fixed inset-0 z-60 flex items-center justify-center bg-black/70 px-4">
-      <div className="relative z-10 w-full max-w-[496px] h-[290px] overflow-y-auto rounded-xl bg-white">
+      <div className="fixed inset-0 z-6 flex items-center justify-center overflow-y-auto">
         {/* Overlay */}
         <div
           className="absolute inset-0 bg-[#000] opacity-70"
@@ -135,6 +134,5 @@ export default function PinModal({ isOpen, onClose }: PinModalProps) {
           </div>
         </div>
       </div>
-    </div>
   );
 }
