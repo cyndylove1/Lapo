@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Satoshi', sans-serif;
+}
+
+.background{
+  height: 100%;
+  background-image: url(./assets/Texture.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
