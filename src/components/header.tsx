@@ -51,7 +51,7 @@ export default function Header({ onMenuClick }: HeaderProps) {
           <div className="hidden md:flex">
             <SearchBar
               placeholder="Search"
-              className="rounded-[98px] h-[32px]  w-[214px] border-[1px] border-(--border)"
+              className="rounded-[98px] h-[32px] w-[214px] border-[1px] border-(--border)"
             />
           </div>
 

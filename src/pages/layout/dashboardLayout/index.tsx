@@ -11,8 +11,6 @@ export default function DashboardLayout() {
   return (
     <>
       <div className="flex min-h-screen">
-        {/* Fixed Sidebar */}
-
         <div
           className={`fixed top-0 left-0 h-screen overflow-y-auto z-50 ${
             isSidebarOpen ? "block" : "hidden lg:block"
@@ -31,13 +29,12 @@ export default function DashboardLayout() {
             onClick={toggleSidebar}
           />
         )}
-
         <div className="flex-1 lg:ml-[240px] w-full">
           <div className="fixed top-0 right-0 left-0 lg:left-[240px] z-20">
             <Header onMenuClick={toggleSidebar} />
           </div>
-          <main className="h-[calc(100vh-82px)] mt-[4rem]">
-            <Outlet />
+          <main className="h-[calc(100vh-82px)] h-full pt-[4rem] bg-(--skyblue) ">
+            <Outlet/>
           </main>
         </div>
       </div>
