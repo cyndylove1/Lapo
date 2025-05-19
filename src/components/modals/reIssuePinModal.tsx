@@ -11,7 +11,7 @@ interface ModalIssueProps {
     if (!isIssueOpen) return null;
   
     return (
-        <div className="fixed inset-0 z-6 flex items-center justify-center overflow-y-auto">
+        <div className="fixed inset-0 z-60 flex items-center justify-center overflow-y-auto">
           {/* Overlay */}
           <div
             className="absolute inset-0 bg-[#000] opacity-70"
