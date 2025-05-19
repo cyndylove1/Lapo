@@ -11,7 +11,7 @@ export default function DesktopSidebar({ isSidebarOpen, toggleSidebar}: MobileSi
   return (
     <>
       <div
-        className={`fixed left-0 top-0 z-50 h-screen w-[250px] overflow-y-auto overflow-hidden border-r-[1px] border-neutral-200 bg-neutral-50 bg-white shadow-md transition-transform duration-300 dark:bg-[#1F2937] lg:hidden ${
+        className={`fixed left-0 top-0 z-50 h-screen w-[250px] overflow-y-auto overflow-hidden bg-white border-[1px] border-(--border) transition-transform duration-300 lg:hidden ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         } flex flex-col justify-between`}
       >
