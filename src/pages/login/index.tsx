@@ -49,7 +49,7 @@ export default function Login() {
               <h2 className="text-[14px] satoshi-400 pt-[6px] leading-[20px] text-(--color)">
                 Forgot Password
               </h2>
-              <div className="flex lg:justify-center items-center justify-start gap-[12px] pt-[1rem]">
+              <div className="flex items-center gap-[12px] pt-[1rem]">
                 <Checkbox height="20px" width="20px" />
                 <h3 className="text-[14px] satoshi-400 leading-[20px] text-[#161616]">
                   Remember me
